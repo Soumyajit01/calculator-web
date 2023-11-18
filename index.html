@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <div id="screen"></div>
+        <div id="calc-buttons">
+            <button onclick="clearText()" class="number">C</button>
+            <button onclick="backspace()" class="number" style="grid-column: 2/4;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace" viewBox="0 0 16 16">
+                <path d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z"/>
+                <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1h7.08zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-7.08z"/>
+              </svg></button>
+            <button onclick="addText('/');" class="operator">&divide;</button>
+            <button onclick="addText('7')" class="number">7</button>
+            <button onclick="addText('8')" class="number">8</button>
+            <button onclick="addText('9')" class="number">9</button>
+            <button onclick="addText('*');" class="operator">X</button>
+            <button onclick="addText('4')" class="number">4</button>
+            <button onclick="addText('5')" class="number">5</button>
+            <button onclick="addText('6')" class="number">6</button>
+            <button onclick="addText('-');" class="operator">-</button>
+            <button onclick="addText('1')" class="number">1</button>
+            <button onclick="addText('2')" class="number">2</button>
+            <button onclick="addText('3')" class="number">3</button>
+            <button onclick="addText('+');" class="operator">+</button>
+            <button onclick="addText('0')" class="number">0</button>
+            <button onclick="addText('.')" class="number decimal">.</button>
+            <button onclick="getAnswer()" class="operator" style="grid-column: 3/5;">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
